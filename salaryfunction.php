@@ -1,5 +1,5 @@
 <?php
-function cleanSalary(int $hardSalary, bool $isStudent = FALSE):int { // začátek těla funkce
+function cleanSalary(int $hardSalary, bool $isStudent = FALSE):int { // start funkce
     if($isStudent == TRUE) {
         $cleanSalary = $hardSalary;
     } else {
@@ -7,9 +7,7 @@ function cleanSalary(int $hardSalary, bool $isStudent = FALSE):int { // začáte
     }
     return $cleanSalary;
 } 
- 
 function cleanSalaryComplex(int $hardSalary, string $type = "") {
-     
     switch ($type) {
         case 'student':
             $tax = 0;
