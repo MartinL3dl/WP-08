@@ -39,21 +39,17 @@ $employees[9]['type'] = 'korona';
 
 <?php 
     for ($i=0; $i < 10; $i++) { ?>
-
         <p>
-            Hrubá mzda: <?= $employees[$i]['salary'] ?>
+         Hrubá mzda: <?= $employees[$i]['salary'] ?>
         </p>
-        
         <p>
-            Čistá mzda normal: <?= cleanSalaryComplex($employees[$i]['salary']);?>
+        Čistá mzda normal: <?=cleanSalaryComplex($employees[$i]['salary']);?>
         </p>
-
         <p>
-            Čistá mzda student: <?= cleanSalaryComplex($employees[$i]['salary'], 'student');?>
+        Čistá mzda student: <?=cleanSalaryComplex($employees[$i]['salary'], 'student');?>
         </p>
-
         <p>
-            Čistá mzda normal během corony: <?= cleanSalaryComplex($employees[$i]['salary'], 'korona');?>
+        Čistá mzda normal během corony: <?=cleanSalaryComplex($employees[$i]['salary'], 'korona');?>
         </p> 
         <br>
         <br>
